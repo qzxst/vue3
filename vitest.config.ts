@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* prettier-ignore */
+// @ts-nocheck
 import { fileURLToPath } from 'node:url'
 import { mergeConfig } from 'vite'
 import { configDefaults, defineConfig } from 'vitest/config'

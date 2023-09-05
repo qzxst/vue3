@@ -6,6 +6,7 @@
 
 <script>
 import Header from '@/components/demo/Header.vue'
+
 export default {
   components: {Header}
 }
