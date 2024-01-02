@@ -1,5 +1,5 @@
-import {createApp} from 'vue'
-import {createPinia} from 'pinia'
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 //
 // import TDesign from 'tdesign-vue-next'
@@ -12,7 +12,6 @@ import './assets/main.css'
 
 import App from './App.vue'
 import router from './router'
-
 
 const app = createApp(App)
 
