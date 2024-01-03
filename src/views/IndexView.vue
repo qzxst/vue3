@@ -25,10 +25,10 @@
         <button class="rounded-md w-20 text-center bg-gray-700">main</button>
       </template>
     </ceshi>
-    <l-button>
-      <template #default>
-        <button class="bg-red-500">按钮</button>
-      </template>
+    <l-button :content="content">
+      <template #nnn> nnn </template>
+      <template #default> default </template>
+      <!-- <button class="bg-red-500">按钮</button> -->
     </l-button>
   </div>
 </template>
@@ -39,6 +39,7 @@ import { useCounterStore } from '@/stores/counter'
 import { useUserStore } from '@/stores/user'
 import ceshi from '@/components/title.vue'
 import LButton from '@/components/button.vue'
+const content = ref<any>('content')
 const data = '父组件'
 const abc = (data: string) => {
   console.log(data)

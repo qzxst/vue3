@@ -1,14 +1,27 @@
 <template>
-  <div class="">
-    <slot />
-    <slot />
-    <slot />
-    <slot />
-    <slot />
+  <div :class="content">
+    {{ content }}
+    <slot name="nnn" />
     <slot />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, toRef, toRefs } from 'vue'
 
-<style scoped></style>
+const content1 = defineProps({
+  content: {
+    type: String,
+    readonly: false
+  }
+})
+
+const { content } = toRefs(content1)
+console.log(content?.value)
+</script>
+
+<style scoped>
+.content {
+  @apply bg-red-500;
+}
+</style>
